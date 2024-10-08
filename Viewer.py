@@ -1,25 +1,25 @@
 import Maze
-
 def view(grid):
-    for i in range(len(grid)):
+for i in range(len(grid)):
         for j in range(len(grid[i])):
             
-            if grid[i][j] == Maze.EMPTY:
+            if grid[i][j] == EMPTY:
                 print("  ", end = "")
                     
-            elif grid[i][j] == Maze.WALL:
+            elif grid[i][j] == WALL:
                 print("##", end = "")
                     
-            elif grid[i][j] == Maze.START:
+            elif grid[i][j] == START:
                 print("^^", end = "")
                     
-            elif grid[i][j] == Maze.END:
+            elif grid[i][j] == END:
                 print("$$", end = "")
                     
-            elif grid[i][j] == Maze.VISITED:
+            elif grid[i][j] == VISITED:
                 print("..", end = "")
                     
             else:
                 raise AssertionError
             
         print()
+
